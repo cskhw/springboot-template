@@ -1,0 +1,13 @@
+# docker-compose.yml
+version: "3.9"
+
+#green
+services:
+  api:
+    container_name: spring-green
+    # restart: always
+    build: .
+    ports:
+      - "8082:8080"
+    volumes:
+      - ./logs:/app/logs

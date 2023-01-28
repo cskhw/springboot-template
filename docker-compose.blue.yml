@@ -1,0 +1,13 @@
+# docker-compose.yml
+version: "3.9"
+
+#blue
+services:
+  api:
+    container_name: spring-blue
+    # restart: always
+    build: .
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./logs:/app/logs

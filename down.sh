@@ -1,0 +1,3 @@
+echo all docker container stop and prune...
+docker rm -f $(docker ps -qa)
+docker system prune -af
